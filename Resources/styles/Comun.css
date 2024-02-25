@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edosz', sans-serif;
+}
+
+@font-face {
+    font-family: 'Edosz'; /* Nombre que asignas a la fuente */
+    src: url('../FUENTES/edosz.ttf') format('truetype'); /* Ruta al archivo de fuente */
+}
+
+header{
+    min-height: 30vh;
+    max-width: 100vw; /* Cambiado de width a max-width */
+    background-image: url(../IMG/wallpaperflare.com_wallpaper.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    
+}
+
+.textoheader{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size:6vw;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ul li {
+    list-style-type: none;
+    flex-grow: 2;
+    text-align: center;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    -webkit-text-stroke: 0.5px rgba(232,93,34,255);
+}
+
+main{
+    min-height: 60vh;
+    min-width: 20vw;
+    background-color: rgba(7,7,7,255);
+    position: relative;
+}
+
+footer{
+    min-height: 10vh;
+    background-color: rgba(7,7,7,255);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5vh;
+}

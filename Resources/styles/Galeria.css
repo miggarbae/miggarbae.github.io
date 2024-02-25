@@ -1,0 +1,130 @@
+
+header{
+    background-image: url(../IMG/Galeria/header.jpg);
+}
+
+main>p{
+    max-height: 10vh;
+    max-width: 100vw;
+
+    color: white;
+    text-align: center;
+    font-size: 10vh;
+    padding: 20px;
+    margin-bottom: 10vh;
+}
+
+.cajas {
+    max-height: 90vh;
+    max-width: 40vw; 
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cajas div {
+    max-width: 15vw;
+    max-height: 25vh;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.cajas div img {
+    max-width: 100%;
+    max-height: 30vh;
+    border-radius: 5px;
+}
+
+
+img {
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+}
+
+img:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    transform: scale(1.2);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+
+
+
+.lateralizq{
+    width: 30vw;
+    height: 90vh;
+}
+
+.organizador{
+    max-width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.lateraldrch{
+    width: 30vw;
+    max-height: 90vh;
+}
+
+.verticalinicial{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 13vh;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 40%;
+}
+.verticalizq{
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    font-size: 20vh;
+    color: grey;
+    opacity: 20%;
+    position: relative;
+    bottom: 50%;
+    left: 30%;
+}
+
+.vertical{
+    writing-mode:vertical-rl;
+    font-size: 13vh;
+    color: white;
+    position: relative;
+    top: 20%;
+    left: 30%;
+}
+
+.verticalatras{
+    writing-mode:vertical-rl;
+    font-size: 20vh;
+    color: grey;
+    opacity: 20%;
+    position: relative;
+    bottom: 50%;
+    left: 30%;
+}
+
+footer{
+    min-height: 10vh;
+    background-color: rgba(7,7,7,255);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5vh;
+}
+
