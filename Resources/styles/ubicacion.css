@@ -257,3 +257,80 @@ nav {
   margin-bottom: 30px;
   font-size: 1em;
 }
+
+@media only screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding: 10px; /* Añade un poco de padding para no pegar los elementos a los bordes */
+  }
+
+  .logo img {
+    margin: 0 auto; /* Centra el logo */
+    display: block;
+    width: 100px; /* Ajusta el tamaño del logo */
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos del menú verticalmente */
+  }
+
+  .menu ul li {
+    margin: 5px 0; /* Reduce el espacio entre elementos del menú */
+  }
+
+  .menu ul li a {
+    font-size: 1em; /* Ajusta el tamaño de la fuente para el menú */
+  }
+
+  .custom-button, .button {
+    font-size: 0.8em; /* Reduce el tamaño de la fuente para los botones */
+    padding: 8px 12px; /* Ajusta el padding */
+    max-width: 100%; /* Permite que el botón se expanda según el contenido */
+    margin: 10px auto; /* Ajusta el margen y centra */
+  }
+
+  .fondo {
+    min-height: 50vh; /* Reduce la altura del fondo para que no ocupe toda la pantalla */
+  }
+
+  .letrafondo .titulo {
+    font-size: 2.5em; /* Reduce el tamaño de la fuente del título */
+  }
+
+  .menu-restaurantes .container, .container {
+    text-align: center; /* Centra el contenido de los contenedores */
+  }
+
+  .restaurants-lista, .texto-ubicacion, .mapa {
+    flex-direction: column; /* Cambia la disposición a columna */
+    padding: 20px; /* Reduce el padding */
+    align-items: center; /* Alinea los elementos al centro */
+  }
+
+  .mapa iframe {
+    width: 100%; /* Ajusta el ancho del mapa al 100% */
+    height: 200px; /* Ajusta la altura del mapa */
+  }
+
+  .separator {
+    margin: 20px 0; /* Ajusta el margen del separador */
+  }
+
+  .pie-pagina, .footer {
+    flex-direction: column; /* Cambia la disposición a columna */
+    text-align: center; /* Centra el texto */
+  }
+
+  .ul-pie li {
+    font-size: 2em; /* Ajusta el tamaño de la fuente para la lista del pie de página */
+  }
+
+  .direccion-corta, .direccion-larga, .telefono, .horario {
+    font-size: 0.8em; /* Reduce el tamaño de la fuente para la información de ubicación */
+  }
+}

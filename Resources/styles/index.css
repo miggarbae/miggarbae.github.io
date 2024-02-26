@@ -311,3 +311,102 @@ nav {
   justify-content: space-between;
 }
 /*-------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding: 10px; /* Añade un poco de padding para no pegar los elementos a los bordes */
+  }
+
+  .logo img {
+    margin: 0 auto; /* Centra el logo */
+    display: block;
+    width: 120px; /* Ajusta el tamaño del logo */
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos del menú verticalmente */
+  }
+
+  .menu ul li {
+    margin: 5px 0; /* Reduce el espacio entre elementos del menú */
+  }
+
+  .menu ul li a {
+    font-size: 1em; /* Ajusta el tamaño de la fuente para el menú */
+  }
+
+  .custom-button,
+  .button {
+    font-size: 0.8em; /* Reduce el tamaño de la fuente para los botones */
+    padding: 8px 12px; /* Ajusta el padding */
+    max-width: 100%; /* Permite que el botón se expanda según el contenido */
+    margin: 10px auto; /* Ajusta el margen y centra */
+  }
+
+  .fondo {
+    min-height: 50vh; /* Reduce la altura del fondo para que no ocupe toda la pantalla */
+  }
+
+  .letrafondo .titulo {
+    font-size: 2.5em; /* Reduce el tamaño de la fuente del título */
+  }
+
+  .letrafondo .direccion {
+    font-size: 0.8em; /* Reduce el tamaño de la fuente de la dirección */
+  }
+
+  .polaroid-carta {
+    flex-direction: column; /* Alinea las tarjetas en columna */
+    align-items: center; /* Centra las tarjetas */
+  }
+
+  .polaroid {
+    margin: 10px 0; /* Ajusta el margen entre tarjetas */
+  }
+
+  .polaroid img {
+    width: 80px; /* Reduce el tamaño de las imágenes */
+    height: 80px; /* Mantiene la proporción */
+  }
+
+  .polaroid p {
+    font-size: 0.8em; /* Reduce el tamaño de la fuente de las descripciones */
+  }
+
+  .family,
+  .ubicacion {
+    flex-direction: column; /* Cambia la disposición a columna */
+    padding: 20px; /* Reduce el padding */
+  }
+
+  .seamos {
+    font-size: 2em; /* Reduce el tamaño de la fuente para la sección family */
+  }
+
+  .come {
+    font-size: 1em; /* Reduce el tamaño de la fuente */
+    justify-content: center; /* Asegura que el texto esté centrado */
+  }
+
+  .texto-ubicacion,
+  .pie-pagina,
+  .footer {
+    text-align: center; /* Centra el texto para estas secciones */
+  }
+
+  .button {
+    left: auto; /* Elimina el ajuste de posición a la izquierda */
+    width: auto; /* Permite que el botón se ajuste al contenido */
+  }
+
+  .img-pie,
+  .ul-pie li {
+    display: none; /* Oculta elementos que no son críticos para reducir el desorden */
+  }
+}
